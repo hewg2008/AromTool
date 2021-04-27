@@ -1,1 +1,0 @@
-来自ligand的benzene环（苯环Ben）和来自蛋白pdb的苯环（Phe)用一样的ref环。

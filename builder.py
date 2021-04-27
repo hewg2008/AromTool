@@ -269,7 +269,7 @@ class RingBuilder(Builder):
 class ContactBuilder:
     '''Build contacts from mol2，pdb files.'''
 
-    def __init__(self, mol2file, pdbfile, residue_types=['PHE', 'TYR', 'TRP'],threshold=6.0):
+    def __init__(self, mol2file, pdbfile, residue_types=['PHE', 'TYR', 'TRP'],threshold=8.0):
         self.pdb_code = os.path.basename(mol2file)[0:4]
         self.ligand_ring_list = Builder.get_mol2_rings(mol2file)
         self.protein_ring_list = Builder.get_pdb_rings(pdbfile, residue_types)
@@ -284,7 +284,7 @@ class ContactBuilder:
             return True
         return False
 
-    def get_contacts(self,threshold=5.0):
+    def get_contacts(self,threshold=8.0):
         '''Get contact list'''
         contacts_list = []
         for ligring in self.ligand_ring_list:
@@ -362,7 +362,7 @@ class ContactBuilder:
 class BatchBuilder:
 
     @staticmethod
-    def build_batch(data_src_path, result_path, residue_types, energyCalculator: EnergyCalculator, threshold=6.0):
+    def build_batch(data_src_path, result_path, residue_types, energyCalculator: EnergyCalculator, threshold=8.0):
         """Build in batch mode."""
         all_files = File.getDir(data_src_path)
         all_builders = []
@@ -402,7 +402,7 @@ class BatchBuilder:
         return all_builders
 
     @staticmethod
-    def build_dataset(indir, outdir, outexcel, calc, residue_types=['PHE', 'TYR', 'TRP'], threshold=6.0):
+    def build_dataset(indir, outdir, outexcel, calc, residue_types=['PHE', 'TYR', 'TRP'], threshold=8.0):
 
         energyCalculator = EnergyCalculator(calc)
         # 批量构建接触
