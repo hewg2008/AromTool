@@ -36,13 +36,17 @@ rdkit                     2019.09.3
 pyexecjs                  1.5.1    
 sqlite                    3.30.1     
 
-# Build Ring
+# Usage
 
-## What is Ring
+Description Below  displays how to use AromTool. All related scripts and files are in director of 'example'.
+
+### Build Ring
+
+### What is Ring
   
 The basic object of AromTool is the Ring object. Combined with Atoms object from ASE, the Ring object not only remains the attributes and methods of Atoms object like collection of each atoms, but it also includes the attributes of centroid, normal vector, PDB codes and contact type, as well as methods about conversion of data's structure and so on. 
 
-## Build Ring from Data
+### Build Ring from Data
 
 Two parameters are needed in order to build ring from data - symbols(atoms' elements) and positions(coordinate of atoms).
 ```python
@@ -60,10 +64,10 @@ positions = [[106.876,17.424,97.544 ],
 ring = Ring(symbols, positions)
 ```
 
-## Build Ring from File
+### Build Ring from File
 Build ring from file and assessing information about the ring.
 
-### From mol2 File
+#### From mol2 File
 ```python
 from aromtool.builder import Builder
 
@@ -117,7 +121,7 @@ coordinate:
  [30.329   9.622  36.437 ]
  [30.2858  9.2759 37.4634]]
 ```
-### From PDB File
+#### Build Ring from PDB File
 ```python  
 from aromtool.builder import Builder
 
@@ -188,12 +192,12 @@ normal vector:
 
 ```
 
-# Build Contact
+## Build Contact
 ---
    
 Contact object is the main object of AromTool. It contains entries to the geometry information(distance, dihedral angle) and energy of aromatic stacking interaction. Besides, Contact object contains PDB codes and the attribute of rings from ligand(TODO) or protein.
 
-## Build Contact From Coordinate data  
+### Build Contact From Coordinates and Elements
 To directly build contact , 2 ring objects needed.  
 After building contact, the values of centroid and normal vector can be accessed from attribute. The following codes show how to build contact and then access contacts' information.
 
@@ -286,7 +290,7 @@ Energy:
 ```
 Noticeably, no information about contact type and PDB code provided.
 
-## Build Contact From File
+### Build Contact From File
 To build contact, two ring objects are required. In this way, the ring objects are built from source files. For example, in PDBbind dataset, the source files are mol2 file(ligand) and pdb file(protein) respectively.
 After building contact, the values of centroid and normal vector can be accessed. The following codes show how to build and access contact.
 
@@ -405,7 +409,7 @@ Distance:
 ```
 
 
-#  Energy Calculation
+##  Energy Calculation
 
 Calculate the energy from a contact file.
 ```python
@@ -433,11 +437,9 @@ energy:
 -2.6499349970290718
 ```
 
-# Export Report
+## Export Report
 
-## Export report from aromatic stacking interaction dataset
-
-Information about the names, contact type, contact distance, contact angle and energy are included in the report.
+Information about the name, contact type, contact distance, contact angle and energy are included in the report.
 ```python
 from aromtool.builder import BatchBuilder
 from aromtool.calculator import EnergyCalculator
