@@ -1,4 +1,4 @@
-# 1 Introduction
+# 1. Introduction
 
 **AromTool** is a Python based program for analyzing aromatic interactions between ligands (mostly drugs, or other material monomers) and receptors (mostly proteins, or other material monomers). With the help of the popular open source computational physio-chemistry libraries, such as ASE, OpenBabel, RDKit, Kekule, etc., and the internally integrated aromatic contact energy calculator based on neural network model as the back-end calculation tool, it can:
   
@@ -18,7 +18,7 @@ AromTool has the following design objectives:
 
 3 Open source code is convenient for customization and extension. The code is based on the object-oriented Python style, and the core class is based on the numpy array (ndarray). It is convenient to integrate into all the Python code, and can easily expand the class or module. For example, calculators can customize other energy calculators.
 
-# 2 Installation    
+# 2. Installation    
   **AromTool** can be installed locally by downloading the entire package.  
   
 ## Dependencies
@@ -36,7 +36,7 @@ rdkit                     2019.09.3
 pyexecjs                  1.5.1    
 sqlite                    3.30.1     
 
-# 3 Usage
+# 3. Usage
 
 Description Below  displays how to use AromTool. All related scripts and files are in director of 'example'.
 
@@ -475,7 +475,7 @@ Report building is completed!
 the tail of the report that we export is shown here:
 [![g9TPsg.md.png](https://z3.ax1x.com/2021/04/27/g9TPsg.md.png)](https://imgtu.com/i/g9TPsg)
 
-# 4 Questions and Issues
+# 4. Questions and Issues
 If you have any questions and issues, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.
 
 
