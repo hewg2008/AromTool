@@ -475,7 +475,8 @@ Parsing file 7std ... 8/8
 the tail of the report that we export is shown here:
 [![g9TPsg.md.png](https://z3.ax1x.com/2021/04/27/g9TPsg.md.png)](https://imgtu.com/i/g9TPsg)
 
-# If you have any questions and issues, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.
+# questions and issues
+If you have any questions and issues, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.
 
 
 
