@@ -407,7 +407,7 @@ class BatchBuilder:
         energyCalculator = EnergyCalculator(calc)
         # 批量构建接触
         batches = BatchBuilder.build_batch(indir, outdir, residue_types, energyCalculator, threshold=threshold)
-        print('批量接触构建结束')
+        print('Batch contact building is completed!')
         # 批量导出报表
         ReportManager.export(outexcel, batches)
-        print('报表构建结束')
+        print('Report building is completed!')
