@@ -469,8 +469,8 @@ Parsing file 7std ... 8/8
 -1.402616054196005
 -2.6499349970290718
 -0.4476579656594951
-批量接触构建结束
-报表构建结束
+Batch contact building is completed!
+Report building is completed!
 ```
 the tail of the report that we export is shown here:
 [![g9TPsg.md.png](https://z3.ax1x.com/2021/04/27/g9TPsg.md.png)](https://imgtu.com/i/g9TPsg)
