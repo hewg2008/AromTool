@@ -1,6 +1,6 @@
 # Introduction
 
-**AromTool** is a Python based program for analyzing aromatic interactions between ligands (mostly drugs, or other material monomers) and receptors (mostly proteins, or other material monomers). With the help of the popular open source computational physical chemistry libraries, such as ASE, OpenBabel, RDKit, Kekule, etc., and the internally integrated aromatic contact energy calculator based on neural network model as the back-end calculation tool, it can:
+**AromTool** is a Python based program for analyzing aromatic interactions between ligands (mostly drugs, or other material monomers) and receptors (mostly proteins, or other material monomers). With the help of the popular open source computational physio-chemistry libraries, such as ASE, OpenBabel, RDKit, Kekule, etc., and the internally integrated aromatic contact energy calculator based on neural network model as the back-end calculation tool, it can:
   
 1 recognize, filter, transform, extract, construct and manipulate aromatic rings in ligand (mol2 format) and receptor (PDB format) files.
 
@@ -40,11 +40,11 @@ sqlite                    3.30.1
 
 ## What is Ring
   
-The basic object of AromTool is Ring object. Combined with Atoms object from ASE, the Ring object not only remain the attributes and methods of Atoms object,like collection of each atoms, but it also possess the attributes of centroid, normal vector, PDB codes and contact type, as well as methods about conversion of data's structure and so on,which are unique attributes of Ring object. 
+The basic object of AromTool is the Ring object. Combined with Atoms object from ASE, the Ring object not only remains the attributes and methods of Atoms object like collection of each atoms, but it also includes the attributes of centroid, normal vector, PDB codes and contact type, as well as methods about conversion of data's structure and so on. 
 
 ## Build Ring from Data
 
-Two parameters are needed in order to build ring from data - symbols(atoms' elements) and positions(coordinate of atoms). Here's the process.
+Two parameters are needed in order to build ring from data - symbols(atoms' elements) and positions(coordinate of atoms).
 ```python
 from aromtool.ring import Ring
 symbols = ['C', 'C', 'H', 'C', 'C', 'H', 'C', 'H', 'C']
@@ -60,8 +60,8 @@ positions = [[106.876,17.424,97.544 ],
 ring = Ring(symbols, positions)
 ```
 
-## Build Ring from Files
-Here's the process of building ring from files and assessing information about the ring.
+## Build Ring from File
+Build ring from file and assessing information about the ring.
 
 ### From mol2 File
 ```python
@@ -95,7 +95,7 @@ print('coordinate: ')
 print(positions)
 ```
 
-code results:
+Results:
 ```python
 the list of ring objects:
 [<aromtool.ring.Ring object at 0x0000000010F3AAC8>]
@@ -155,7 +155,7 @@ print(centroid)
 
 ```
 
-code results:
+Results:
 ```python
 the list of ring objects:
 [<aromtool.ring.Ring object at 0x00000000120A13C8>, <aromtool.ring.Ring object at 0x00000000120A3C48>, <aromtool.ring.Ring object at 0x00000000120A3E08>, <aromtool.ring.Ring object at 0x00000000120A3FC8>, <aromtool.ring.Ring object at 0x00000000120A61C8>, <aromtool.ring.Ring object at 0x00000000120A63C8>, <aromtool.ring.Ring object at 0x00000000120A6588>, <aromtool.ring.Ring object at 0x00000000120A6748>, <aromtool.ring.Ring object at 0x00000000120A6908>, <aromtool.ring.Ring object at 0x00000000120A6388>, <aromtool.ring.Ring object at 0x00000000120A6C48>, <aromtool.ring.Ring object at 0x00000000120A6E08>, <aromtool.ring.Ring object at 0x00000000120A6FC8>, <aromtool.ring.Ring object at 0x00000000120AB1C8>, <aromtool.ring.Ring object at 0x00000000120AB388>, <aromtool.ring.Ring object at 0x00000000120AB548>, <aromtool.ring.Ring object at 0x00000000120AB708>, <aromtool.ring.Ring object at 0x00000000120AB8C8>, <aromtool.ring.Ring object at 0x00000000120ABA88>, <aromtool.ring.Ring object at 0x00000000120ABC48>, <aromtool.ring.Ring object at 0x00000000120ABE08>, <aromtool.ring.Ring object at 0x00000000120ABFC8>, <aromtool.ring.Ring object at 0x00000000120B11C8>, <aromtool.ring.Ring object at 0x00000000120B1388>, <aromtool.ring.Ring object at 0x00000000120B1548>, <aromtool.ring.Ring object at 0x00000000120B1708>, <aromtool.ring.Ring object at 0x00000000120B18C8>, <aromtool.ring.Ring object at 0x00000000120B1A88>, <aromtool.ring.Ring object at 0x00000000120B1C48>, <aromtool.ring.Ring object at 0x00000000120B1E08>, <aromtool.ring.Ring object at 0x00000000120B1FC8>, <aromtool.ring.Ring object at 0x00000000120B61C8>, <aromtool.ring.Ring object at 0x00000000120B6388>, <aromtool.ring.Ring object at 0x00000000120B6548>, <aromtool.ring.Ring object at 0x00000000120B6708>, <aromtool.ring.Ring object at 0x00000000120B68C8>, <aromtool.ring.Ring object at 0x00000000120B6A88>, <aromtool.ring.Ring object at 0x00000000120B6C48>, <aromtool.ring.Ring object at 0x00000000120B6E08>, <aromtool.ring.Ring object at 0x00000000120B6FC8>, <aromtool.ring.Ring object at 0x00000000120BC1C8>, <aromtool.ring.Ring object at 0x00000000120BC388>, <aromtool.ring.Ring object at 0x00000000120BC548>, <aromtool.ring.Ring object at 0x00000000120BC708>, <aromtool.ring.Ring object at 0x00000000120BC8C8>, <aromtool.ring.Ring object at 0x00000000120BCA88>, <aromtool.ring.Ring object at 0x00000000120BCC48>, <aromtool.ring.Ring object at 0x00000000120BCE08>, <aromtool.ring.Ring object at 0x00000000120BCFC8>, <aromtool.ring.Ring object at 0x00000000120C21C8>, <aromtool.ring.Ring object at 0x00000000120C2388>, <aromtool.ring.Ring object at 0x00000000120C2548>, <aromtool.ring.Ring object at 0x00000000120C2708>, <aromtool.ring.Ring object at 0x00000000120C28C8>, <aromtool.ring.Ring object at 0x00000000120C2A88>, <aromtool.ring.Ring object at 0x00000000120C2C48>, <aromtool.ring.Ring object at 0x00000000120C2E08>, <aromtool.ring.Ring object at 0x00000000120C2FC8>, <aromtool.ring.Ring object at 0x00000000120C81C8>, <aromtool.ring.Ring object at 0x00000000120C8388>, <aromtool.ring.Ring object at 0x00000000120C8548>, <aromtool.ring.Ring object at 0x00000000120C8708>, <aromtool.ring.Ring object at 0x00000000120C88C8>, <aromtool.ring.Ring object at 0x00000000120C8A88>, <aromtool.ring.Ring object at 0x00000000120C8C48>, <aromtool.ring.Ring object at 0x00000000120C8E08>, <aromtool.ring.Ring object at 0x00000000120C8FC8>, <aromtool.ring.Ring object at 0x00000000120CD1C8>, <aromtool.ring.Ring object at 0x00000000120CD388>]
@@ -191,11 +191,11 @@ normal vector:
 # Build Contact
 ---
    
-Contact object is the main object of AromTool. It contains access the geometry information(distance, dihedral angle) and energy of aromatic stacking interaction. Besides, Contact object contains PDB codes and the attribute of rings from ligand or protein.
+Contact object is the main object of AromTool. It contains entries to the geometry information(distance, dihedral angle) and energy of aromatic stacking interaction. Besides, Contact object contains PDB codes and the attribute of rings from ligand(TODO) or protein.
 
 ## Build Contact From Coordinate data  
-To build contact, input 2 ring objects. For example, in PDBbind dataset the ring objects are in mol2 and pbd formats.
-After building contact, the values of centroid and normal vector can be accessed from attribute. The following codes show how to build contact and then access these results.
+To directly build contact , 2 ring objects needed.  
+After building contact, the values of centroid and normal vector can be accessed from attribute. The following codes show how to build contact and then access contacts' information.
 
 ```python
 from aromtool.contact import Contact
@@ -266,7 +266,7 @@ else:
     print('no aromatic stacking interaction')
 ```
 
-code results:
+Results:
 ```python
 Dihedral angle:
  105.10978137419309
@@ -284,11 +284,11 @@ Energy:
 -1.2557073816289344
 
 ```
-Using this way, no information about contact type and PDB code can be given.
+Noticeably, no information about contact type and PDB code provided.
 
 ## Build Contact From File
-To build contact, two ring objects should be input. In this way, the ring objects are built from source files. For example, in PDBbind dataset, the source files are mol2 file(ligand) and pdb file(protein) respectively.
-After building contact, the values of centroid and normal vector can be accessed from attribute. The following codes show how to build contact and then access these results.
+To build contact, two ring objects are required. In this way, the ring objects are built from source files. For example, in PDBbind dataset, the source files are mol2 file(ligand) and pdb file(protein) respectively.
+After building contact, the values of centroid and normal vector can be accessed. The following codes show how to build and access contact.
 
 ```python
 from aromtool.contact import Contact
@@ -375,7 +375,7 @@ print('Distance:\n', contact.distance)
 
 ```
 
-Code result:
+Result:
 ```python
 Aromatic stacking interaction:
 [<aromtool.contact.Contact object at 0x00000000120A1C88>, <aromtool.contact.Contact object at 0x00000000120A1CC8>, <aromtool.contact.Contact object at 0x00000000120A1308>, <aromtool.contact.Contact object at 0x00000000120A1388>, <aromtool.contact.Contact object at 0x00000000120A14C8>]
@@ -427,7 +427,7 @@ print('energy: ')
 print(energy)
 ```
 
-code results:
+Results:
 ```python
 energy: 
 -2.6499349970290718
@@ -460,7 +460,7 @@ batchbuilder = BatchBuilder.build_dataset(src_dataset, dst_dataset, reportPath, 
 ReportManager.export(reportPath, batchbuilder)
 ```
 
-code results(tail):
+Results(tail of flow shown):
 ```python
 Parsing file 7std ... 8/8
 2021-04-27 14:53:04,604 BatchBuilder INFO 7std has contact(s). 
@@ -472,8 +472,10 @@ Parsing file 7std ... 8/8
 批量接触构建结束
 报表构建结束
 ```
-the report that we export is shown here:
+the tail of the report that we export is shown here:
 [![g9TPsg.md.png](https://z3.ax1x.com/2021/04/27/g9TPsg.md.png)](https://imgtu.com/i/g9TPsg)
+
+#If you have any questions and issues, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.#
 
 
 
