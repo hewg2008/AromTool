@@ -433,9 +433,9 @@ energy:
 -2.6499349970290718
 ```
 
-# Export the report
+# Export Report
 
-## Export the report from aromatic stacking interaction dataset
+## Export report from aromatic stacking interaction dataset
 
 Information about the names, contact type, contact distance, contact angle and energy are included in the report.
 ```python
@@ -475,7 +475,7 @@ Parsing file 7std ... 8/8
 the tail of the report that we export is shown here:
 [![g9TPsg.md.png](https://z3.ax1x.com/2021/04/27/g9TPsg.md.png)](https://imgtu.com/i/g9TPsg)
 
-# questions and issues
+# Questions and Issues
 If you have any questions and issues, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.
 
 
