@@ -40,10 +40,8 @@ sqlite                    3.30.1
 
 Description Below  displays how to use AromTool. All related scripts and files are in director of 'example'.
 
-### Build Ring
-
-### What is Ring
-  
+## Build Ring
+ 
 The basic object of AromTool is the Ring object. Combined with Atoms object from ASE, the Ring object not only remains the attributes and methods of Atoms object like collection of each atoms, but it also includes the attributes of centroid, normal vector, PDB codes and contact type, as well as methods about conversion of data's structure and so on. 
 
 ### Build Ring from Data
