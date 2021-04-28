@@ -417,8 +417,8 @@ from ase.io import read
 # Access the coordinate data from ring file.
 xyz_contact = read(r'.\contact\7std_contact_4.xyz')
 
-# Choose a model
-pinn = ('AromNN-PiBPTT.pb')
+# Choose a model(More models in the director of data\predictive_model)
+pinn = ('AromNN-PiBPTT.pb') 
 
 # Define a calculator
 energy_calculator = EnergyCalculator(pinn)
