@@ -19,7 +19,7 @@ AromTool has the following design objectives:
 3 Open source code is convenient for customization and extension. The code is based on the object-oriented Python style, and the core class is based on the numpy array (ndarray). It is convenient to integrate into all the Python code, and can easily expand the class or module. For example, calculators can customize other energy calculators.
 
 # 2. Installation    
-  **AromTool** can be installed locally by downloading the entire package.  
+  **AromTool** can be installed locally by downloading the entire package. Currently only supports **Windows** system. 
   
 ## Dependencies
 
