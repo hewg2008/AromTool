@@ -8,7 +8,7 @@
 
 3 output aromatic contact type, geometry (including contact distance and angle) and energy report (Excel format).   
 
-**AromTool** is mainly designed for materials (especially pharmaceutical materials) and chemical scientists to implement aromatic stacking analysis, build aromatic contact data sets and generate aromatic stacking analysis reports.
+**AromTool** is mainly designed for pharmaceutical  scientists to implement aromatic stacking analysis, build aromatic contact data sets and generate aromatic stacking analysis reports.
 
 AromTool has the following design objectives:
 
