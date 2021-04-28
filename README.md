@@ -409,7 +409,7 @@ Distance:
 
 ##  Energy Calculation
 
-Calculate the energy from a contact file.
+Calculate the energy from a contact file via calling a trained model. More models in the director of data\predictive_model)
 ```python
 from aromtool.calculator import EnergyCalculator
 from ase.io import read
