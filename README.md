@@ -26,8 +26,8 @@ AromTool has the following design objectives:
 python                    3.7.6   
 tensorflow                1.13.1  
 scikit-learn              0.23.2  
-scipy                     1.5.4 
-numpy                     1.18.1   
+scipy                     1.5.4  
+numpy                     1.18.1    
 pandas                    1.1.5   
 xlwt                      1.3.0  
 ase                       3.20.0   
