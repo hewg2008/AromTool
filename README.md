@@ -38,7 +38,7 @@ sqlite                    3.30.1
 
 # 3. Usage
 
-Description Below  displays how to use AromTool. All related scripts and files are in director of 'example'.
+Description Below  displays how to use AromTool. All related scripts and data files are in director of 'example'.
 
 ## Build Ring
  
