@@ -479,5 +479,11 @@ the tail of the report that we export is shown here:
 If you have any questions and issues, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.
 
 
+# 5. TODO
+If you have interest in further developing AromTool, you may take a look at todo list below:
 
+##TODO list
+1 Modify input. Add one more input method. Input one .pdb file of a complex rather than one .mol2 file of a ligand and one .pdb file of a protein.
+2 Visualization.
+3 Web server.
 
