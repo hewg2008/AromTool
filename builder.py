@@ -213,7 +213,7 @@ class Builder:
                 # ring.append([atom['symbol'], [atom['coord']['x'], atom['coord']['y'], atom['coord']['z']]])
 
             if len(positions) > 0:
-                # 构建一个ring对象
+                # Build Ring object.
                 mol2_ring = Ring(symbols, positions)
                 mol2_ring.residue_type = 'ligand'  # Currently ligand type only has value of 'ligand'.
                 ring_list.append(mol2_ring)
@@ -226,7 +226,7 @@ class Builder:
         '''Get protein ring from pdb file.'''
         allproteinFile = File.parse_pdb_data(protein_path)
         pdb_list = []
-        # 过滤返回 pdb的环结构，原子列表
+        # Filter to get ring structure from a pdb, return atom list. 
         for amino_acid_type in filters:
             atom_list = []
             pdb_list.append(atom_list)
@@ -240,9 +240,9 @@ class Builder:
         rings = []
         for amino_acid_type in filters:
             for atom_list in pdb_list:
-                r = Atomutil.generate_amino_acid(atom_list, amino_acid_table[amino_acid_type]['ring'])  # 拆分多个环
+                r = Atomutil.generate_amino_acid(atom_list, amino_acid_table[amino_acid_type]['ring'])  # Split rings
                 if len(r) > 0:
-                    # 构建一个ring对象
+                    # Build rings.
                     rings = r + rings
 
         for ring_item in rings:
@@ -369,7 +369,7 @@ class BatchBuilder:
         if not os.path.exists(result_path):
             os.makedirs(result_path)
         log_path = os.path.join(result_path, "info.log")
-        # 日志设置
+        # Set log config
         logger = Logger.set_log(log_path, 'BatchBuilder')
         xyz_total_path = os.path.join(result_path, 'contact')
 
@@ -405,9 +405,9 @@ class BatchBuilder:
     def build_dataset(indir, outdir, outexcel, calc, residue_types=['PHE', 'TYR', 'TRP'], threshold=8.0):
 
         energyCalculator = EnergyCalculator(calc)
-        # 批量构建接触
+        # Build contact in batch.
         batches = BatchBuilder.build_batch(indir, outdir, residue_types, energyCalculator, threshold=threshold)
         print('Batch contact building is completed!')
-        # 批量导出报表
+        # Export report in batch.
         ReportManager.export(outexcel, batches)
         print('Report building is completed!')
