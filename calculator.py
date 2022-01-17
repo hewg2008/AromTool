@@ -1,4 +1,14 @@
-'''This module defines a calculator class for calculating energy of contacts.'''
+'''This module defines a calculator class named PINN for calculating energy of contacts. and PINN is modified from TensorAlloy.
+Citation:
+Xin Chen, Xing-Yu Gao, Ya-Fan Zhao, De-Ye Lin, Wei-Dong Chu, Hai-Feng Song,
+TensorAlloy: An automatic atomistic neural network program for alloys,
+Computer Physics Communications,
+Volume 250,
+2020,
+107057,
+ISSN 0010-4655,
+https://doi.org/10.1016/j.cpc.2019.107057.
+'''
 
 from aromtool.utils.pinn.calculator import PINN
 from aromtool.contact import Contact
