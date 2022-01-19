@@ -476,7 +476,7 @@ the tail of the report that we export is shown here:
 [![g9TPsg.md.png](https://z3.ax1x.com/2021/04/27/g9TPsg.md.png)](https://imgtu.com/i/g9TPsg)
 
 # 4. Questions and Issues
-If you have any questions and issues, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.
+If you have any questions or any issues found, please do not hesitate to send me email directly: hewg3@mail2.sysu.edu.cn / wenganhe@icloud.com.
 
 
 # 5. TODO
@@ -486,4 +486,7 @@ If you have interest in further developing AromTool, you are warmly welcome to t
 1 Modify input. Add one more input method. Input one .pdb file of a complex rather than one .mol2 file of a ligand and one .pdb file of a protein.   
 2 Visualization.   
 3 Web server.   
+
+## Citation
+AromTool: predicting aromatic stacking energy using an atomic neural network model. 
 
