@@ -1,6 +1,6 @@
 # 1. Introduction
 
-**AromTool** is a Python based program for analyzing aromatic interactions between ligands (mostly drugs, or other material monomers) and receptors (mostly proteins, or other material monomers). With the help of the popular open source computational physio-chemistry libraries, such as ASE, OpenBabel, RDKit, Kekule, etc., and the internally integrated aromatic contact energy calculator based on neural network model as the back-end calculation tool, it can:
+**AromTool** is a Python-based tool for analyzing aromatic interactions between ligands (mostly drugs, or other material monomers) and receptors (mostly proteins, or other material monomers). With the help of the popular open source computational physio-chemistry libraries, such as ASE, OpenBabel, RDKit, Kekule, etc., and the internally integrated aromatic contact energy calculator based on neural network model as the back-end calculation tool, it can:
   
 1 recognize, filter, transform, extract, construct and manipulate aromatic rings in ligand (mol2 format) and receptor (PDB format) files.
 
@@ -63,7 +63,7 @@ ring = Ring(symbols, positions)
 ```
 
 ### Build Ring from File
-Build ring from file and assessing information about the ring.
+Build ring from file and read ring information.
 
 #### From mol2 File
 ```python
