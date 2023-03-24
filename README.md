@@ -489,4 +489,5 @@ If you have interest in further developing AromTool, you are warmly welcome to t
 
 ## Citation
 AromTool: predicting aromatic stacking energy using an atomic neural network model. 
-
+Phys Chem Chem Phys. 2021 Aug 4;23(30):16044-16052.
+doi: 10.1039/d1cp01954f. 
